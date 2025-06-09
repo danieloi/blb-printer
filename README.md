@@ -1,6 +1,6 @@
 # BLB Commentary PDF Downloader
 
-This script downloads David Guzik's commentary on Hebrews from Blue Letter Bible as PDFs.
+This script downloads David Guzik's commentary on Bible books from Blue Letter Bible as PDFs.
 
 ## Requirements
 
@@ -24,16 +24,28 @@ yarn start
 ```
 
 The script will:
-- Create a `pdfs` directory
-- Download each chapter of Hebrews as a PDF
+- Create a `pdfs` directory with a subfolder for each book (e.g., `pdfs/romans/`)
+- Download each chapter as a PDF, named after the page title (e.g., "Study Guide for Romans 1 by David Guzik.pdf")
 - Apply the specified print settings:
-  - 190% scaling
+  - 200% scaling
   - A4 paper size
   - Minimum margins
   - No headers/footers
   - Arial font family
 
-The PDFs will be saved as `hebrews-1.pdf`, `hebrews-2.pdf`, etc. in the `pdfs` directory.
+## Usage
+
+- To download all chapters of a book:
+  ```bash
+  npm start <book-name>
+  # Example: npm start romans
+  ```
+
+- To download a specific chapter:
+  ```bash
+  npm start <book-name> <chapter-number>
+  # Example: npm start romans 6
+  ```
 
 ## Development
 
