@@ -1,0 +1,20 @@
+{
+  "name": "blb-printer",
+  "version": "1.0.0",
+  "description": "Download Blue Letter Bible commentary chapters as PDFs",
+  "main": "dist/download-commentary.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/download-commentary.ts",
+    "dev": "ts-node-dev --respawn src/download-commentary.ts"
+  },
+  "dependencies": {
+    "puppeteer": "^22.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
