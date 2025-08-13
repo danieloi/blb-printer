@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/download-commentary.ts",
-    "dev": "ts-node-dev --respawn src/download-commentary.ts"
+    "dev": "ts-node-dev --respawn src/download-commentary.ts",
+    "download-all": "ts-node src/download-all-remaining.ts"
   },
   "dependencies": {
     "puppeteer": "^22.3.0"

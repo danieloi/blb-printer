@@ -32,6 +32,7 @@ The script will:
   - Minimum margins
   - No headers/footers
   - Arial font family
+  - Minimum font size: 12pt (via CSS clamp so larger fonts are preserved)
 
 ## Usage
 

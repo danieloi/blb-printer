@@ -29,7 +29,7 @@ export const OLD_TESTAMENT: Testament = {
     { name: "nehemiah", chapters: 13 },
     { name: "esther", chapters: 10 },
     { name: "job", chapters: 42 },
-    { name: "psalms", chapters: 150 },
+    { name: "psalm", chapters: 150 },
     { name: "proverbs", chapters: 31 },
     { name: "ecclesiastes", chapters: 12 },
     { name: "song-of-solomon", chapters: 8 },

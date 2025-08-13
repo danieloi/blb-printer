@@ -50,6 +50,7 @@ async function injectPrintStyles(page: Page): Promise<void> {
       @media print {
         * {
           font-family: Arial, Helvetica, sans-serif !important;
+          font-size: clamp(0.9em, inherit, 100pt) !important; /* Keep original size, min 12pt */
         }
       }
     `,
